@@ -225,8 +225,13 @@
     <EmbeddedResource Include="frmTrangChu.resx">
       <DependentUpon>frmTrangChu.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="MenuTab\frmKhachHang.resx">
       <DependentUpon>frmKhachHang.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="MenuTab\frmDonHang.resx">
+      <DependentUpon>frmDonHang.cs</DependentUpon>
+>>>>>>> feature-QL_DonHang
     </EmbeddedResource>
     <EmbeddedResource Include="MenuTab\frmSanPham.resx">
       <DependentUpon>frmSanPham.cs</DependentUpon>
@@ -236,11 +241,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+<<<<<<< HEAD
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+=======
+>>>>>>> feature-QL_DonHang
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />
@@ -269,6 +277,7 @@
     <None Include="Resources\password-1.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -276,6 +285,13 @@
   <ItemGroup>
     <Analyzer Include="..\packages\AWSSDK.SecurityToken.3.7.100.14\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />
   </ItemGroup>
+=======
+    <Analyzer Include="..\packages\AWSSDK.SecurityToken.3.7.100.14\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="mongocrypt.dll" />
+  </ItemGroup>
+>>>>>>> feature-QL_DonHang
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MongoDB.Libmongocrypt.1.12.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.12.0\build\MongoDB.Libmongocrypt.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
