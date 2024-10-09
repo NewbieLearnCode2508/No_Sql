@@ -58,11 +58,16 @@
             // 
             // gridSanPham
             // 
+            this.gridSanPham.AllowUserToAddRows = false;
+            this.gridSanPham.AllowUserToDeleteRows = false;
             this.gridSanPham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridSanPham.Location = new System.Drawing.Point(12, 310);
+            this.gridSanPham.MultiSelect = false;
             this.gridSanPham.Name = "gridSanPham";
+            this.gridSanPham.ReadOnly = true;
             this.gridSanPham.RowHeadersWidth = 51;
             this.gridSanPham.RowTemplate.Height = 24;
+            this.gridSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridSanPham.Size = new System.Drawing.Size(634, 228);
             this.gridSanPham.TabIndex = 0;
             this.gridSanPham.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSanPham_CellClick);
@@ -172,7 +177,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(110, 110);
+            this.label2.Location = new System.Drawing.Point(80, 110);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 16);
             this.label2.TabIndex = 4;
@@ -202,7 +207,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(117, 138);
+            this.label3.Location = new System.Drawing.Point(87, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 16);
             this.label3.TabIndex = 4;
@@ -211,7 +216,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(112, 166);
+            this.label4.Location = new System.Drawing.Point(82, 166);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 16);
             this.label4.TabIndex = 4;
@@ -220,7 +225,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(152, 194);
+            this.label5.Location = new System.Drawing.Point(122, 194);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 16);
             this.label5.TabIndex = 4;
@@ -236,7 +241,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(124, 222);
+            this.label6.Location = new System.Drawing.Point(94, 222);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(81, 16);
             this.label6.TabIndex = 4;
@@ -245,7 +250,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(165, 250);
+            this.label7.Location = new System.Drawing.Point(135, 250);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 16);
             this.label7.TabIndex = 4;
@@ -266,6 +271,7 @@
             this.cboLoaiSP.Name = "cboLoaiSP";
             this.cboLoaiSP.Size = new System.Drawing.Size(121, 24);
             this.cboLoaiSP.TabIndex = 6;
+            this.cboLoaiSP.SelectedIndexChanged += new System.EventHandler(this.cboLoaiSP_SelectedIndexChanged);
             // 
             // frmSanPham
             // 
